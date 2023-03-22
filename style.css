@@ -178,9 +178,10 @@ a{
 
 .intro h2{
     font-size: 3rem;
-    color:#fff;
     text-align: center;
+  color:var(--primary-color);
 }
+
 
 .about{
     display: flex;
@@ -218,12 +219,12 @@ font-size: 2rem;
 .tabs{
     width:100%;
     color:var(--primary-color);
-    margin-top:20px;
+    margin-top:30px;
 }
 
 .tabs .tablink{
     display: flex;
-    gap:45px;
+    gap:50px;
     font-size: 1.1rem;
     font-weight: 600;
     color:var(--tablink-color);

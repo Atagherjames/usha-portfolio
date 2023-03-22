@@ -99,4 +99,7 @@ function tabcon() {
   })
 }
 
+if (window.innerWidth >= 650) {
+  body.style.backgroundImage = 'none'
+}
 
