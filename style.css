@@ -139,9 +139,8 @@ color:rgb(224, 218, 218);
 }
 
 .menu li {
-margin-top:1px;
+margin-top:4px;
 height: 24px;
-font-size: 0.8rem;
  }
 
    .hambur {
@@ -173,14 +172,14 @@ a{
 .intro{
     display: flex;
     justify-content: center;
-    align-items: center;
      margin-top:130px;
 }
 
 
 .intro h2{
     font-size: 3rem;
-    color:var(--primary-color);
+    color:#fff;
+    text-align: center;
 }
 
 .about{
@@ -197,7 +196,7 @@ max-height: 460px;
 .about .aImg img{
 width: 100%;
 max-height: 100%;
-border-radius: 12px;
+border-radius: 15px;
 }
 
 .about .aInfo{
@@ -292,12 +291,15 @@ div.tab2 article p{
 
 /* -----------media query for about section--------------- */
 @media screen and (max-width:900px){
+  .intro{
+     margin-top:200px;
+  }
 .intro h2{
-    font-size: 2.5rem;
+    font-size: 2.8rem;
 }
 
 .tabs .tablink{
-    gap:15%;
+    gap:20px;
     padding-top: 40px;
 } 
 
@@ -309,6 +311,7 @@ div.tab2 article p{
 div.tab2 article span{
     width: 60%;
 }
+
 .about{
 margin-top: 50px;
     display: flex;
@@ -323,31 +326,31 @@ align-items: center;
 }
 
 .about .aImg{
-    flex-basis: 100%;
+    flex-basis: 70%;
 }
 
 .about .aInfo h4{
-    font-size: 1.7rem;
+    font-size: 1eem;
     align-self: center;
     justify-content: center;
     } 
 }
 
 @media screen and (max-width:750px){
-    .intro h2{
-        font-size: 2rem;
-    }
-
-    .about{
+   .about{
         display: flex;
 flex-direction: column;
     }
 
-    /* .about .aImg{
-        width: 60%;
+    .about .aImg{
+        width: 84%;
         align-self: center;
         justify-self: center;
-    } */
+    } 
+
+  .about .aImg img{
+    width: 100%;
+  }
 
 .about .aInfo{
     display: flex;
@@ -358,13 +361,13 @@ flex-direction: column;
     width: 100%;
     text-align:justify;
 line-height: 1.5rem;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
     .about .aInfo h4{
         align-self: center;
         justify-self: center;
-        font-size: 1.4rem;
+        font-size: 1.9rem;
         } 
 
         div.tab2 article span{
@@ -372,7 +375,7 @@ line-height: 1.5rem;
         }
 
         .tabs .tablink{
-            gap:70px;
+            gap:40px;
             padding-top: 20px;
         } 
 }
