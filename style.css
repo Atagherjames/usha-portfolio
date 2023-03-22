@@ -34,7 +34,7 @@ width:100vw;
 height: 100vh;
  overflow-x: hidden; 
 font-family: Poppins,Rubik ;
-background: url('robot.jpg') no-repeat center center/cover;
+background: url('pexels-jonathan-borba-3727771.jpg') no-repeat center center/cover;
 background-color: var(--background-color);
 }
 
@@ -179,7 +179,7 @@ a{
 .intro h2{
     font-size: 3rem;
     text-align: center;
-  color:var(--primary-color);
+  color:#fff;
 }
 
 
