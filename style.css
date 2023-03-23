@@ -228,7 +228,7 @@ font-size: 2rem;
 
 .tabs .tablink{
     display: flex;
-    gap:50px;
+    gap:60px;
     font-size: 1.1rem;
     font-weight: 600;
     color:var(--tablink-color);
@@ -237,6 +237,7 @@ font-size: 2rem;
 }
 .tabs .tablink .tab{
     padding-bottom: 5px;
+  margin-right:20px;
     border-bottom: 3px solid #ee0851;
     color:#ee0851;
 }
@@ -519,6 +520,7 @@ cursor: pointer;
 .res p a{
     color:var(--primary-color);
 }
+
 .res p:hover{
     background-image: linear-gradient(to top right, #453bd8 50%, #ee0851 50%);
 }
