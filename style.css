@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Rubik:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 *{
     margin:0;
     padding:0;
@@ -18,7 +20,7 @@
 /* light theme variable */
 [data-theme="light"]{
     --background-color: hsla(0, 100%, 100%, 1);
-    --primary-color:hsla(0,0%,0%, 0.78);
+    --primary-color:hsla(0,0%,0%, 0.77);
     --tablink-color: hsla(0, 0%, 0%, 0.9);
     --box-background:rgb(248, 248, 239);
     --box-border-color:rgb(248, 236, 236);
@@ -34,7 +36,6 @@ width:100vw;
 height: 100vh;
  overflow-x: hidden; 
 font-family: Poppins,Rubik ;
-background: url('robot.jpg') no-repeat center center/cover;
 background-color: var(--background-color);
 }
 
@@ -132,6 +133,10 @@ color:rgb(224, 218, 218);
 /* media query for small devices */
 
  @media screen and (max-width:650px) {
+   body{
+     background:url('pexels-jonathan-borba-3727771.jpg') no-repeat center center/cover var(--background-color);
+   }
+
     .menu{
         flex-direction: column;
         height: 90px;
@@ -139,9 +144,8 @@ color:rgb(224, 218, 218);
 }
 
 .menu li {
-margin-top:1px;
+margin-top:4px;
 height: 24px;
-font-size: 0.8rem;
  }
 
    .hambur {
@@ -173,14 +177,14 @@ a{
 .intro{
     display: flex;
     justify-content: center;
-    align-items: center;
      margin-top:130px;
 }
 
-
 .intro h2{
+  font-family: Lobster;
     font-size: 3rem;
-    color:var(--primary-color);
+    text-align: center;
+  color:var(--primary-color);
 }
 
 .about{
@@ -197,7 +201,7 @@ max-height: 460px;
 .about .aImg img{
 width: 100%;
 max-height: 100%;
-border-radius: 12px;
+border-radius: 15px;
 }
 
 .about .aInfo{
@@ -219,16 +223,17 @@ font-size: 2rem;
 .tabs{
     width:100%;
     color:var(--primary-color);
-    margin-top:20px;
+    margin-top:30px;
 }
 
 .tabs .tablink{
     display: flex;
-    gap:45px;
+    gap:50px;
     font-size: 1.1rem;
     font-weight: 600;
     color:var(--tablink-color);
     cursor: pointer;
+
 }
 .tabs .tablink .tab{
     padding-bottom: 5px;
@@ -248,12 +253,9 @@ flex-direction: column;
 margin-top: 20px;
 }
 
-
-
 .tabcontent .talent li p, .tabcontent .edu li p {
 color:var(--header-color);
 }
-
 
 div.tab2 article{
     display: flex;
@@ -264,7 +266,6 @@ div.tab2 article{
 div.tab2 article span{
     width:280px;
     height: 4px;
-    /* margin-top: -5px; */
     margin-bottom: 25px;
 border-radius: 10px;
 }
@@ -292,12 +293,16 @@ div.tab2 article p{
 
 /* -----------media query for about section--------------- */
 @media screen and (max-width:900px){
+  .intro{
+     margin-top:200px;
+  }
+  
 .intro h2{
-    font-size: 2.5rem;
+    font-size: 2.8rem;
 }
 
 .tabs .tablink{
-    gap:15%;
+    gap:20px;
     padding-top: 40px;
 } 
 
@@ -309,12 +314,14 @@ div.tab2 article p{
 div.tab2 article span{
     width: 60%;
 }
+
 .about{
 margin-top: 50px;
     display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+  text-align: justify;
 }
 
 .about .aInfo{
@@ -323,31 +330,31 @@ align-items: center;
 }
 
 .about .aImg{
-    flex-basis: 100%;
+    flex-basis: 70%;
 }
 
 .about .aInfo h4{
-    font-size: 1.7rem;
+    font-size: 1eem;
     align-self: center;
     justify-content: center;
     } 
 }
 
 @media screen and (max-width:750px){
-    .intro h2{
-        font-size: 2rem;
-    }
-
-    .about{
+   .about{
         display: flex;
 flex-direction: column;
     }
 
-    /* .about .aImg{
-        width: 60%;
+    .about .aImg{
+        width: 75%;
         align-self: center;
         justify-self: center;
-    } */
+    } 
+
+  .about .aImg img{
+    width: 100%;
+  }
 
 .about .aInfo{
     display: flex;
@@ -356,15 +363,14 @@ flex-direction: column;
 
 .about .aInfo .description{
     width: 100%;
-    text-align:justify;
 line-height: 1.5rem;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 
     .about .aInfo h4{
         align-self: center;
         justify-self: center;
-        font-size: 1.4rem;
+        font-size: 1.9rem;
         } 
 
         div.tab2 article span{
@@ -372,7 +378,7 @@ line-height: 1.5rem;
         }
 
         .tabs .tablink{
-            gap:70px;
+            gap:40px;
             padding-top: 20px;
         } 
 }
@@ -382,6 +388,13 @@ div.tab2 article span{
     width:100%;
 }
 }
+
+/*  this media query is to resolve color conflict*/
+ @media screen and (max-width:650px) {
+   .intro h2{
+     color:#fff;
+   }
+ }
 
 /* -----------------Services------------------- */
 .sub-title{
@@ -445,7 +458,7 @@ color:#fff;
 text-decoration: none;
 color:var(--header-color);
 font-size: 12px;
-margin-top: 20px;
+margin-top: 17px;
 display: inline-block;
 margin-left: 15rem;
 }
@@ -456,12 +469,12 @@ margin-left: 15rem;
     color:#fff;
 }
 
+.services-list div p{
+  text-align: center;
+}
+
 /* -----------media query for service section------------- */
 @media(max-width:850px){
-
-     /* .services-list{
-        gap:38px;
-    }  */
 .services-list div{
     width: 100%;
     height: 270px;

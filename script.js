@@ -99,11 +99,3 @@ function tabcon() {
   })
 }
 
-
-// // formspree recaptche
-grecaptcha.ready(function() {
-  grecaptcha.execute('{your-site-key}', { action: 'submit' }).then(function(token) {
-    console.info("got token: " + token);
-    document.getElementById('g-recaptcha-response').value = token;
-  });
-});
