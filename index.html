@@ -8,136 +8,105 @@
   <meta name="author" content="Atagher James">
   <meta name="description" content="This is my Personal website">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="menu.css">
   <title>Usha portfolio</title>
 </head>
 
 <body>
-  <!-- header -->
-  <header class="header">
-    <div class="container head">
-      <section class="lg">
-        <div class="logo"><img src="portfolio.jpg" alt="Usha"></div>
+  <!-- Navigation Credit:Traversy Media  -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="/">
+        <img src="UshaLogo.png.jpeg" alt="" />
+      </a>
+      <ul class="desktop-menu">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
 
-        <div class="toggle"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#fff"
-            class="bi bi-brightness-low-fill" viewBox="0 0 16 16">
-            <path
-              d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8.5 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm0 11a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm5-5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm-11 0a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9.743-4.036a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707zm-7.779 7.779a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707zm7.072 0a.5.5 0 1 1 .707-.707.5.5 0 0 1-.707.707zM3.757 4.464a.5.5 0 1 1 .707-.707.5.5 0 0 1-.707.707z" />
-          </svg>
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-moon-fill"
-            viewBox="0 0 16 16">
-            <path
-              d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
-          </svg>
+      <!---------------- Hamburger Menu ----------------->
+      <div class="mobile-menu">
+        <input type="checkbox" class="toggler" role="checkbox" aria-checked="false" tabindex="0" />
+        <div class="hamburger" style="background:blue">
+          <div style="background:#fff"></div>
         </div>
-      </section>
-      <div>
-        <div class="hambur">
-          <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48" class="open">
-            <path d="M6 36v-3h36v3Zm0-10.5v-3h36v3ZM6 15v-3h36v3Z" />
-          </svg>
-          <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48" class="close">
-            <path
-              d="m12.45 37.65-2.1-2.1L21.9 24 10.35 12.45l2.1-2.1L24 21.9l11.55-11.55 2.1 2.1L26.1 24l11.55 11.55-2.1 2.1L24 26.1Z" />
-          </svg>
+        <div class="menu">
+          <div>
+            <div>
+              <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+              </ul>
+            </div>
+          </div>
         </div>
-        <ol class="menu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#service">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ol>
       </div>
     </div>
-  </header>
+  </nav>
+
 
   <!---------About me---------- -->
-  <div class="container">
-    <div class="intro">
-      <h2>Hi, I'm<br> Atagher <br>James<br>From Nigeria</h2>
-    </div>
-    <section class="about">
-      <div class="aImg">
-        <img src="template.jpg" alt="James">
+  <section class="about">
+    <div class="container">
+      <div class="intro">
+        <div class="intro-left">
+          <small>Web Developer </small>
+          <h2>Hi, I am Atagher<br>James From <br>Nigeria</h2>
+        </div>
+        <div class="intro-right">
+          <img src="template.jpg" alt="James">
+        </div>
       </div>
-      <aside class="aInfo">
-        <h4>About Me</h4>
-        <article class="description">Hey! My name is James and I'm a web developer. I create responsive web pages
-          and
-          applications using HTML5, CSS3 and Modern Javascript. Working as a Front-end Developer allows
-          me to utilize all or most of the new technology that are constantly evolving. I'm creative, I'm available
-          for
-          new challenges
-          that can help in problem solving.
-
-        </article>
-        <div class="tabs">
-          <ul class="tablink">
-            <li class=" skill" id="tab">Skills</li>
-            <li class="exp" id="tab">Experience</li>
-            <li class="edu" id="tab">Education</li>
-          </ul>
-
-          <!-- --------content for each tab------- -->
-          <div class="tab1 tabcontent">
-            <ul class="talent">
-              <li>
-                <p>Ui/Ux</p><span>Designing Web Interfaces</span>
-              </li>
-              <li>
-                <p>Web Development</p><span>Frontend Development</span>
-              </li>
-              <li>
-                <p>Problem Solving</p><span>Maths and Computation</span>
-              </li>
-            </ul>
-
+      <div class="about-me">
+        <div class="about-me-container">
+          <h2>About Me</h2>
+          <p class="about-p">I am a Front-end Developer with three years of experience. I use technology such as HTML,
+            CSS, and Javascript
+            to create responsive and scalable website. I am available for hire and ready for challenges that can help in
+            problem solving.
+          </p>
+          <div class="tab-container">
+            <p class="tablink active">Skills</p>
+            <p class="tablink">Experience</p>
+            <p class="tablink">Education</p>
           </div>
-          <div class="tab2 tabcontent">
-            <article>
-              <p>HTML5</p>
-              <span class="span1"></span>
-            </article>
-            <article>
-              <p>CSS3</p>
-              <span class="span2"></span>
-            </article>
-            <article>
-              <p>Javascript</p>
-              <span class="span3"></span>
-            </article>
-        
-            <article>
-              <p>Git</p>
-              <span class="span5"></span>
-            </article>
-          </div>
-
-
-          <div class="tab3 tabcontent">
-            <ul class="edu">
-              <li>
-                <p>2022</p><span>Senior Secondary School Certificate (SSCE)</span>
-              </li>
-              <li>
-                <p>2021</p><span>Open Weaver - Javascript bootcamp </span>
-              </li>
-              
-              <li>
-                <p>2020</p><span>Traversy Media - Front-end Development</span>
-              </li>
-              
-            </ul>
+          <div class="tablink-container">
+            <div>
+              <div class="tabcontent">
+                <ul>
+                  <li><b>Web Development</b><br><span>frontend development</span></li>
+                  <li><b>UI / UX Design</b><br><span>web interface</span></li>
+                  <li><b>Problem Solving</b><br><span>maths & computation</span></li>
+                </ul>
+              </div>
+              <div class="tabcontent">
+                <ul>
+                  <li class="bar-container"><b>HTML</b><br><span class="bar p-bar-1"></span></li>
+                  <li class="bar-container"><b>CSS</b><br><span class="bar p-bar-2"></span></li>
+                  <li class="bar-container"><b>Javascript</b><br><span class=" bar p-bar-3"></span></li>
+                  <li class="bar-container"><b>Git</b><br><span class="bar p-bar-4"></span></li>
+                </ul>
+              </div>
+              <div class="tabcontent">
+                <ul>
+                  <li><b>Senior Secondary School Certificate (SSCE)</b><br><span>2022</span></li>
+                  <li><b>Traversy Media -- Frontend development</b><br><span>2020-2022</span></li>
+                  <li><b>Dream weaver -- Javascript bootcamp</b><br><span>2022</span></li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
-      </aside>
-    </section>
-  </div>
+      </div>
+    </div>
+  </section>
 
-  <!---------services----------s-->
-  <div id="service" style="margin-bottom:150px"></div>
+  <!---------services------------>
   <div class="container">
-    <h1 class="sub-title">My Services</h1>
+    <h1 class="sub-title" id="services">My Services</h1>
     <div class="services-list">
       <div>
         <section class="svg-center">
