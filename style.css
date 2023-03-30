@@ -86,7 +86,7 @@ color:var(--primary-color);
       position: fixed;
       top: 0;
       right: 70px;
-      z-index: 3;
+      z-index: 20;
     }
   
     .mobile-menu .toggler {
@@ -574,7 +574,6 @@ flex-direction: column;
     justify-content: center;
 color:var(--primary-color);
 position: relative;
-z-index: 90;
 }
 
 .res p{
