@@ -30,7 +30,7 @@ background-color: var(--background-color);
 color:var(--primary-color);
 }
 
-/*------------------ Navbar credit: Traversy Media ---------------------- */
+/*------------------ Navbar  ---------------------- */
 .navbar {
     background-color: #000;
     height: 70px;
@@ -185,10 +185,10 @@ color:var(--primary-color);
       display: flex;
       align-items: center;
       justify-content: center;
+      background-color: #ee0851;
     }
   
     .mobile-menu .menu > div {
-      background: blue;
       border-radius: 50%;
       width: 200vw;
       height: 200vw;
@@ -215,7 +215,7 @@ color:var(--primary-color);
     .mobile-menu .menu > div > div > ul > li {
       list-style: none;
       color: #fff;
-      font-size: 0.4rem;
+      font-size: 22px;
       padding: 1rem;
     }
 
@@ -301,7 +301,7 @@ margin-top:160px;
   box-shadow: 1px 1px  3px var(--box-background), -1px -1px  3px var(--box-background);
   background-color: #080808;
   padding: 10px;
-  width:325px;
+  width:330px;
   height:auto;
   display: flex;
   align-items: center;
@@ -365,7 +365,7 @@ height: 3px;
 
 .tablink-container div{
   margin-left: 0;
-  text-align: justify;
+  text-align: left;
 }
 
 .tablink-container div .tabcontent{
@@ -446,6 +446,18 @@ margin-top: 12px;
 .tablink-container div ul li .bar{
   width: 100%;
 }
+
+  .about-me-container .about-p{
+    font-size:14px;
+  }
+  
+  .tab-container .tablink:last-of-type{
+    padding-right: 0;
+  }
+
+  .tab-container .tablink.active::after{
+    top:34px;
+  }
 }
 
 /* -----------------Services------------------- */
@@ -676,6 +688,7 @@ color:#fff;
         height: 550px;
         margin-top: 90px;
         padding-top: 50px;
+      padding-bottom: 70px;
     }
 
     .contact_center{
@@ -741,6 +754,7 @@ cursor: pointer;
 color:#fff;
 font-size: 1.1rem;
 text-transform: uppercase;
+      margin-bottom:50px;
     }
 
 /* ----------media query for small devices-------------- */
